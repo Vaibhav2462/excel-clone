@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar-container">
+        <select name="" id="" class="font-size">
+            <option value="18">18</option>
+            <option value="22">22</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+        </select>
+        <select name="" id="" class="font-family">
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Lucida Console">Lucida Console</option>
+            <option value="Arial">Arial</option>
+            <!-- <option value="Lucida Handwriting">Lucida Handwriting</option> -->
+            <!-- <option value="Papyrus">Papyrus</option> -->
+        </select>
+        <div class="bui-container">
+            <button class ="bold me toolme">B</button>
+            <button class ="underline me toolme">U</button>
+            <button class ="italic me toolme">I</button>
+        </div>
+        <!-- <div class="align-container">
+            <button class="left meto">LEFT</button>
+            <button class="mid meto">CENTER</button>
+            <button class="right meto">RIGHT</button>
+        </div> -->
+        <div class="file-container" style="display: flex;margin-left: 4rem;border: 1px;">
+            <button class = "down"style="margin-top: 1rem;margin-right: 1.2rem;font-size: x-large;font-weight: 800;margin-bottom:1rem">DOWNLOAD</button>
+            <!-- <div style="margin-top: 2.3rem;">
+                <input type="file" name="" class = "open">
+            </div> -->
+        </div>
+
+    </div>
+    <div class="formula-container">
+        <input type="text" class="cell-container">
+        <input type="text" class="formula-cont">
+    </div>
+    <div class="grid-container">
+        <div class="blank_box"></div>
+        <div class="col_count"></div>
+        <div class="row_count"></div>
+        <div class="grid"></div>
+    </div>
+    <div class="sheet-container">
+        <button class="addme">ADD</button>
+        <div class="sheet active">Sheet 1</div>
+    </div>
+    <script src="script.js"></script>
+    <script src="grid.js"></script>
+    <script src="file.js"></script>
+    <script src="formula.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+}
+.toolbar-container{
+    height: 5rem;
+    background-color: lightgrey;
+}
+.formula-container{
+    height: 2rem;
+    background-color: darkcyan;
+}
+.sheet-container{
+    height: 3rem;
+    background-color: grey;
+    display: flex;
+    overflow: auto;
+    /* position: absolute;
+    z-index: 10; */
+}
+.grid-container{
+    height: calc( 100vh - ( 5rem + 2rem + 3rem ));
+    background-color: white;
+    position: relative;
+    overflow: auto;
+}
+.sheet-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sheet-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.addme{
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 3rem;
+}
+.sheet{
+    margin-left: 1rem;
+    height: 1rem;
+    background-color: rgb(180, 174, 174);
+    min-width: 4rem;
+    padding: 1rem;
+}
+.active{
+    background-color: white;
+}
+
+/* grid handle */
+.blank_box{
+    background-color: gray;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid;
+}
+.row{
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(18, 156, 92);
+    text-align: center;
+    border: 1px solid;
+    border-radius: 1px;
+}
+
+.col{
+    height:2rem;
+    width:4.5rem;
+    background-color: rgb(18, 156, 92);
+    text-align: center;
+    border: 1px solid;
+    border-radius: 1px;
+    
+}
+.col_count{
+    display: flex;
+    position: absolute;
+    left: 34px;
+    top: 0rem;
+}
+.cell{
+    height: 2rem;
+    min-width :4.5rem;
+    border: 1px solid;
+    text-align: center;
+}
+.wholecell{
+    display: flex;
+}
+.grid{
+    position: absolute;
+    left: 34px;
+    top: 34px;
+}
+
+/* formula container */
+.formula-container{
+    display: flex;
+    align-items: center;
+}
+.cell-container{
+    width: 6rem;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+.formula-cont{
+    width: calc( 100vw - 12rem)
+}
+
+
+/* toolbar */
+.toolbar-container{
+    display: flex;
+}
+.font-size{
+    height: 2rem;
+    margin-top: 1.5rem;
+    width: 5rem;
+    margin-left: 1rem;
+}
+.font-family{
+    height: 2rem;
+    margin-top: 1.5rem;
+    width: 15rem;
+    margin-left: 1rem;
+}
+.bui-container{
+    height: 2rem;
+    background-color: #c1c5be;
+    width: 8rem;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    display: flex;
+}
+.me{
+    width: 33.3%;
+    background-color: #37b1d6;
+    border-radius: 8px;
+}
+.align-container{
+    height: 2rem;
+    width: 13rem;
+    background-color: #ccacb6;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+.meto{
+    width: 33%;
+    height: 100%;
+    border-radius: 5px;
+}
+.align-container{
+    display: flex;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+
+}
+.left{
+    text-align: left;
+}
+.mid{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.active-btn{
+    background-color: rgb(48, 31, 148);
+}
+.download{
+    border: 1px solid;
+    height: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
